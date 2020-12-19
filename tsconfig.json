@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "declaration": false,
+    "downlevelIteration": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es2015",
+    "strict": true,
+    "esModuleInterop": true,
+    "lib": [
+      "es2018",
+      "dom",
+      "scripthost"
+    ],
+    "paths": {
+    }
+  }
+}

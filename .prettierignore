@@ -1,0 +1,7 @@
+**/*.md
+**/*.svg
+node_modules/
+dist/
+test/
+docs/
+package.json

@@ -1,3 +1,3 @@
-import HelloWorld from './HelloWorld';
-import * as constant from './constant';
-export default { constant, HelloWorld };
+export default function helloWorld() {
+  console.log('hello world');
+}

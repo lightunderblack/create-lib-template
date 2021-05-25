@@ -4,4 +4,7 @@ node_modules/
 dist/
 test/
 docs/
+doc/
+lib/
+plugins/
 package.json

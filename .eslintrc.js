@@ -1,22 +1,33 @@
-{
-  "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
-  "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended"
+module.exports = {
+  extends: [
+    "alloy",
+    "alloy/react",
+    "alloy/typescript",
   ],
-  "env": {
+  ignorePatterns: [
+    '.eslintrc.js',
+    '.prettierrc.js',
+    'rollup.config.js',
+    'commitlint.config.js'
+  ],
+  env: {
     "browser": true,
     "es6": true,
     "node": true,
     "jquery": true
   },
-  "parserOptions": {
+  parserOptions: {
     "ecmaVersion": 6,
     "sourceType": "module"
   },
-  "rules": {
+  globals: {
+  },
+  settings: {
+    react: {
+      version: "detect",
+    }
+  },
+  rules: {
     "no-redeclare": 1,
     "no-return-assign": 1,
     "no-undef": 2,
@@ -28,6 +39,7 @@
     "@typescript-eslint/no-unnecessary-type-assertion": 0,
     "@typescript-eslint/no-inferrable-types": 0,
     "@typescript-eslint/no-empty-function": 0,
-    "@typescript-eslint/no-var-requires": 0
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/no-this-alias": 0
   }
-}
+};
